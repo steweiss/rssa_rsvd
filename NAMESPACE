@@ -1,4 +1,4 @@
-useDynLib(Rssa, .registration = TRUE)
+useDynLib(Rsvdssa, .registration = TRUE)
 
 import(lattice)
 import(svd)
