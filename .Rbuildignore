@@ -3,3 +3,5 @@ ToDo.txt
 tests
 inst/extdata
 inst/tests
+^.*\.Rproj$
+^\.Rproj\.user$
