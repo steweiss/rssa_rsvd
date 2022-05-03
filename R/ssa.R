@@ -68,6 +68,7 @@ ssa <- function(x,
                 svd.method = c("auto", "nutrlan", "propack", "svd", "eigen", "rspectra", "primme"),
                 force.decompose = TRUE) {
   print(L)
+  print(N)
   svd.method <- match.arg(svd.method)
 
   # Squeeze the attributes
@@ -213,7 +214,7 @@ ssa <- function(x,
     svd.method <- .determine.svd.method(this, kind = kind, neig = neig, ...)
 
   this$svd.method <- svd.method
-
+  print(str(this))
   # Decompose, if necessary
   if (force.decompose) {
     if (!is.null(weights) && all(weights == 0))
