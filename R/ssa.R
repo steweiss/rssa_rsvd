@@ -218,7 +218,7 @@ ssa <- function(x,
   if (force.decompose) {
     if (!is.null(weights) && all(weights == 0))
       stop("Nothing to decompose: the given field shape is empty")
-
+    print(str(this))
     this <- decompose(this, neig = neig, ...);
   }
 
